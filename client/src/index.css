@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #faf7f2;
+  color: #2b2b2b;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #b23a2f;
+  color: white;
+}
+.brand { font-size: 20px; font-weight: 700; color: white; text-decoration: none; }
+.nav-links { display: flex; gap: 18px; align-items: center; }
+.nav-links a, .btn-link {
+  color: white; text-decoration: none; font-size: 15px;
+  background: none; border: none; cursor: pointer;
+}
+.nav-user { font-size: 14px; opacity: 0.9; }
+.container { max-width: 900px; margin: 0 auto; padding: 32px 20px; }
+h1 { color: #b23a2f; }
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.menu-card {
+  background: white; border-radius: 10px; padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.menu-card.unavailable { opacity: 0.5; }
+.desc { font-size: 13px; color: #666; }
+.price { font-weight: 700; margin: 6px 0; }
+.tag { font-size: 12px; padding: 3px 8px; border-radius: 12px; }
+.tag-available { background: #dff5e1; color: #1e7d32; }
+.tag-unavailable { background: #fbe4e1; color: #b23a2f; }
+.order-form, .auth-form, .menu-form {
+  display: flex; flex-direction: column; gap: 10px; max-width: 420px;
+}
+.order-form input, .auth-form input, .menu-form input, .auth-form select {
+  padding: 10px; border-radius: 6px; border: 1px solid #ddd; font-size: 14px;
+}
+.order-item-row { display: flex; justify-content: space-between; align-items: center; }
+.order-item-row input { width: 60px; }
+button {
+  background: #b23a2f; color: white; border: none; padding: 10px 16px;
+  border-radius: 6px; cursor: pointer; font-size: 14px;
+}
+button:hover { background: #93251c; }
+.total { font-weight: 700; }
+.error { color: #b23a2f; }
+.message { color: #1e7d32; }
+.orders-list { display: flex; flex-direction: column; gap: 12px; margin-top: 12px; }
+.order-card {
+  background: white; padding: 14px; border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.role-label { font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+section { margin-top: 32px; }
