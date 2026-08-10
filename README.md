@@ -1,2 +1,2 @@
 # QuantumBite
-Smart Restaurant Management S
+Smart Restaurant Management System
